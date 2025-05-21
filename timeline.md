@@ -16,7 +16,7 @@
 - **2011 – Thor exilado em Midgard**  
   O Deus do Trovão recupera o Mjölnir, derrota o Destruidor e retorna a Asgard.
 
-<!-- SLOT_LOKI -->
+Loki (Tom Hiddleston), o vilão príncipe de Asgard, Deus da Mentira e da má influência intergaláctica, tenta vencer os perigos após roubar o Tesseract. O cubo com as jóias do infinito o colocará em grandes disputas e amadurecimento psicológico inédito.
 
 - **2012 – Invasão Chitauri / Formação dos Vingadores**  
   Loki ataca Nova York com o Tesseract; os Vingadores se reúnem e selam a fenda dimensional.
