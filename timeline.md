@@ -56,7 +56,7 @@
 - **2023 – Ultimato**  
   Vingadores viajam no tempo, recuperam as Joias, desfazem o Estalo e derrotam Thanos definitivo.
 
-<!-- SLOT_WANDAVISION -->
+WandaVisão, da Marvel Studios, mistura o estilo de sitcoms clássicas com o Universo Cinematográfico da Marvel, e acompanha Wanda Maximoff e o Visão - dois super-seres vivendo uma vida ideal no subúrbio - começando a suspeitar que nem tudo é o que parece.
 
 - **2024 – Homem‑Aranha: Longe de Casa**  
   Peter Parker enfrenta Mysterio e lida com a revelação de sua identidade.
