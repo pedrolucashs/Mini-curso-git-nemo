@@ -1,0 +1,26 @@
+name: [_____]
+
+on:
+  [_____]
+
+jobs:
+  [_____]:
+    runs-on: [_____]
+
+    steps:
+      - name: [_____]
+        uses: [_____]
+
+      - name: [_____]
+        uses: [_____]
+        with:
+          node-version: [_____]
+
+      - name: [_____]
+        run: [_____]
+
+      - name: [_____]
+        run: [_____]
+
+      - name: [_____]
+        run: [_____]
