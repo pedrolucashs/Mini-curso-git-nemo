@@ -25,7 +25,7 @@ jobs:
         working-directory: Dia 2
 
       - name: Rodar testes
-        run: npm test -- --watchAll=false --roots "src"
+        run: npm test -- --watchAll=false --roots "./src"
         working-directory: Dia 2
 
       - name: Build do projeto
