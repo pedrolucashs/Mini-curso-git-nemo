@@ -1,0 +1,98 @@
+#Apresentacao{ 
+    height: 97.5vh;
+    min-height: 700px;
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    background:url(./assets/Estrelas.svg) ;
+}
+#topo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+.modal_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 20vw;
+    height: 15vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4972e4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.modal_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ondas {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+    margin: 0;
+    background:  #0B165A;
+    
+    
+}
+@media(min-width:768px) and (max-width:1023px){
+    #Apresentacao{ 
+        padding-top: 5vh;
+
+    }
+    .ondas {
+        position: absolute;
+        top: 90vh;
+        width: 100%;
+        height: 18vh;
+        margin: 0;
+        background:  #0B165A;
+    }
+}
+@media(max-width:767px){
+    #Apresentacao{ 
+        padding-top: 0vh;
+    }
+    #topo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 15vh;
+    }
+    .ondas {
+        position: absolute;
+        top: 91vh;
+        width: 100%;
+        margin: 0;
+        background:  #0B165A;
+    }
+}
+
+/* Fogos de artifício */
+.firework {
+    position: fixed;
+    width: 6px;
+    height: 6px;
+    border-radius: 12px;
+    z-index: 1101;
+    pointer-events: none;
+    opacity: 0.85;
+    animation: firework-pop 0.7s linear;
+    box-shadow: 0 0 8px 2px rgba(0,0,0,0.15);
+}
+
+@keyframes firework-pop {
+    0% { transform: scaleY(0.2); opacity: 0.2; }
+    60% { transform: scaleY(1.2); opacity: 1; }
+    100% { transform: scaleY(1); opacity: 0.7; }
+}

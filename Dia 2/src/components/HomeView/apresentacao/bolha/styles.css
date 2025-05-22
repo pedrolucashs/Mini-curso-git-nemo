@@ -1,0 +1,108 @@
+#bolhas{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10vh;
+    padding-right: 5vw;
+}
+#bolhas section{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+@keyframes move {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100vh);
+    }
+  }
+
+@keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-2vh);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+#bolha_ceu {
+  width: 20vw;
+  height: auto;
+  padding-top: 5vh;
+  animation: float 6s infinite ease-in-out;
+}
+#dscience {
+  animation: float 6s infinite ease-in-out;
+  width: 3.5vw;
+  
+}
+#ia {
+  animation: float 6s infinite ease-in-out;
+  margin-left: -3.5vw;
+  width: 3.5vw;
+}
+#robo {
+  animation: float 6s infinite ease-in-out;
+  width: 3.5vw;
+}
+
+@media(min-width:768px) and (max-width:1023px){
+  
+  #bolha_ceu {
+    width: 25vw;
+   
+  }
+  #dscience {
+    width: 4.5vw;
+  }
+  #ia {
+    width: 4.5vw;
+  }
+  #robo {
+    animation: float 6s infinite ease-in-out;
+    width: 4.5vw;
+  }
+}
+@media  (max-width:767px){
+  #bolhas{
+    padding-top: 2vh;
+  }
+  #bolha_ceu {
+    width: 35vw;
+    margin-top: -10vh;
+  }
+  #dscience {
+    margin-top: -10vh;
+    width: 5vw;
+  }
+  #ia {
+    margin-top: -10vh;
+    width: 5vw;
+  }
+  #robo {
+    margin-top: -10vh;
+    width: 5vw;
+  }
+}
+@media (max-width:549px) {
+  #bolhas{
+    padding-top: 10vh;
+  }
+  #bolha_ceu {
+    width: 55vw;
+  }
+  #dscience {
+    width: 7vw;
+  }
+  #ia {
+    width: 7vw;
+  }
+  #robo {
+    width: 7vw;
+  }
+}

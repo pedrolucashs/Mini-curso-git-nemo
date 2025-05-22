@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Readex Pro";
+}
+
+#corpo{
+    background: #0B165A;
+}
+
+#scrollToTop {
+    position: fixed;
+    bottom: 1vh;
+    right: 1vw;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}	
+#scrollToTop img {
+    width: 4vw;
+}
+
+
+@media (min-width:1024px) and (max-width: 1440px)
+ {
+    #scrollToTop {
+        right: 0.5vw; 
+    }	
+}
+@media (min-width:768px) and (max-width: 1023px)
+ {
+    #corpo{
+        padding-top: 7vh;
+    }
+    #scrollToTop {
+        right: 3vw;
+    }  
+}
+@media (min-width:600px) and (max-width: 767px){
+    #corpo{
+        width: 100vw;
+        padding-top: 7vh;
+    }
+    #scrollToTop {
+        right: 1vw; 
+    }   
+}

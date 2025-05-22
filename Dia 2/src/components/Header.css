@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Readex Pro";
+}
+
+.HeaderContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row; 
+ background: #0B1557;
+ position: fixed;
+  padding: 2vh;
+  top: 0;
+  width: 100vw;
+  z-index: 1000;
+}.HeaderContainer img {
+  padding-left: 4vw;
+  width: 12vw;
+  height: 5vh;
+  margin-bottom: 0;
+}
+.HeaderContainer ul	{
+  display: flex;
+  flex-direction: row; 
+  list-style: none;
+  justify-content: space-between;
+  padding-right: 5vw;
+  width: 40vw; 
+}
+
+.HeaderContainer ul li a {
+  padding: 0px 2px 11px 0px;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.HeaderContainer ul li a:hover {
+  color: #06B0F4; 
+}
+.HeaderContainer ul li.active a {
+  color: #06B0F4; 
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+}
+
+@media (min-width:550px) and (max-width: 1440px){
+  .HeaderContainer{
+    padding: 1vh;
+  }
+  .HeaderContainer img {
+    padding-left: 2vw;
+    width: 10vw;
+  }
+  .HeaderContainer ul{
+    padding-right: 2vw;
+    width: 50vw;
+  }
+  .HeaderContainer ul li a {
+    padding: 0px 2px 11px 0px;
+    font-size: 1.5vw;
+  }
+}
+@media (max-width: 549px) {
+  .HeaderContainer {
+    padding: 1vh;
+  }
+  .HeaderContainer img {
+    padding-left: 2vw;
+
+  }
+  .HeaderContainer ul {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+    padding-right: 4vw;
+    color: #fff;
+  }
+  .hamburger img{
+    width: 7vw;
+    padding-right: 2vw;
+  }
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 5.5vh;
+
+    transition: height 0.3s ease, opacity 0.3s ease; 
+  }
+  .nav-menu.open {
+    display: block;
+    flex-direction: column;
+    margin: 0 -2vw;
+    width: 100vw;
+    background: #fff;
+  }
+  .nav-menu.open li {
+    margin: 2vh 5vw;
+    border-bottom:  0.1vh solid #06B0F4;
+   
+  }
+  .nav-menu.open li a {
+    color: #0e0d0d;
+    text-decoration: none;
+    font-size: 3vw;
+  }
+  #ultimo{
+    border: none;
+    margin-bottom: 0.5vh;
+  }
+}
