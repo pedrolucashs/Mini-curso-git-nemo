@@ -1,26 +1,29 @@
-name: [_____]
+name: [React App CI/CD]
 
 on:
-  [_____]
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
 
 jobs:
-  [_____]:
-    runs-on: [_____]
+  build:
+    runs-on: [ubuntu-latest]
 
     steps:
-      - name: [_____]
-        uses: [_____]
+      - name: [Build do projeto]
+        uses: [npm run build]
 
-      - name: [_____]
-        uses: [_____]
+      - name: [Setup Node.js]
+        uses: [actions/setup-node@v4]
         with:
-          node-version: [_____]
+          node-version: ['18']
 
-      - name: [_____]
-        run: [_____]
+      - name: [Instalar dependências]
+        run: [npm install]
 
-      - name: [_____]
-        run: [_____]
+      - name: [Checkout do código]
+        run: [actions/checkout@v4]
 
-      - name: [_____]
-        run: [_____]
+      - name: [Rodar testes]
+        run: [npm test -- --watchAll=false]
